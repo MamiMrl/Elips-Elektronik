@@ -1,0 +1,676 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --text-color-secondary: rgb(252, 123, 10);
+  --primary-color: rgb(8, 21, 57);
+  --section-bg: rgb(248, 248, 248);
+}
+
+.bg-grey {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: var(--primary-color);
+  font-family: "Gordita", serif;
+}
+
+/* REGULAR FONT SIZE PROPERTY HERE */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-weight: 400;
+  margin-top: 0;
+  font-style: normal;
+}
+
+a,
+button,
+img,
+input,
+span {
+  transition: all 0.3s ease 0s;
+}
+
+a,
+button {
+  text-decoration: none;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+/* .home {
+  margin-top: 170px;
+}
+
+@media (max-width: 1140px) {
+  .home {
+    margin-top: 193px;
+  }
+} */
+
+.home .span-text {
+  color: var(--text-color-secondary);
+}
+
+img {
+  /* max-width: 100%;  YUNUS*/
+  height: auto;
+}
+
+/* SECTION HEADER STYLING */
+.content .text h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.sectors .content .text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+/* MAIN NAVBAR  */
+
+.navbar-collapse {
+  flex-grow: initial;
+}
+
+.nav-wrapper {
+  border-bottom: 1px solid var(--color-white);
+  background-color: var(--primary-color);
+}
+
+.navbar .navbar-brand {
+  margin-left: 0;
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-color: var(--color-white);
+  --bs-navbar-disabled-color: var(--color-white);
+}
+
+.nav-wrapper .upper-header-wrapper {
+  background-color: white;
+}
+
+/* ------------------------------------------------ */
+
+/* CONTACT WHITE NAVBAR (LINKEDIN WHATSAPP MAIL PHONE) */
+
+.contact-info-text:link {
+  color: var(--text-color-secondary);
+  font-size: 0.7rem;
+}
+
+.phone-mail-wrapper .social-mail .contact-info-text .info-icon {
+  margin-right: 0.5rem;
+}
+
+.social-whatsapp {
+  margin-left: 3rem;
+}
+
+.whatsapp-linkedin-wrapper {
+  display: flex;
+  margin-left: auto;
+}
+
+.whatsapp-linkedin-wrapper .social-linkedin {
+  margin-left: auto;
+}
+
+.all-links .navbar-nav .nav-item .navbar-link {
+  color: var(--color-white);
+  margin-left: 3rem;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 991px) {
+  .all-links .navbar-nav .nav-item .navbar-link {
+    margin-left: 0;
+  }
+}
+
+.all-links .navbar-nav .nav-item .navbar-link:hover {
+  color: var(--text-color-secondary);
+  border-bottom: var(--text-color-secondary) solid 0.1rem;
+  display: inline-block;
+}
+
+/* SEARCH BUTTON */
+.all-links .nav-item #searchBtn {
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .all-links .nav-item #searchBtn {
+    display: none;
+  }
+}
+/* ------------------------------------------------ */
+
+/* NavBar Second Row */
+#navbar-2nd-row {
+  background-color: var(--primary-color);
+}
+
+/* NavBar 3rd Row Başarı Öykülerimiz... */
+.navbar-3rd-row .text-information {
+  margin-bottom: 0;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+.navbar-3rd-row {
+  background: rgb(9, 21, 56);
+  background: linear-gradient(
+    -90deg,
+    rgba(9, 21, 56, 1) 0%,
+    rgba(12, 31, 83, 1) 9%,
+    rgba(12, 31, 83, 1) 35%,
+    rgba(8, 21, 57, 1) 47%,
+    rgba(8, 21, 57, 1) 80%,
+    rgba(1, 26, 62, 1) 100%
+  );
+}
+
+.navbar-dropdown-link .navbar-nav .nav-item .navbar-link:hover {
+  color: var(--text-color-secondary);
+  border-bottom: var(--text-color-secondary) solid 0.1rem;
+  display: inline-block;
+}
+
+.navbar-3rd-row__links {
+  flex-direction: row;
+}
+
+.navbar-3rd-row__links > li {
+  margin-left: 3rem;
+}
+
+.navbar-3rd-row .text-information {
+  color: var(--text-color-secondary);
+}
+
+.navbar-dropdown-link .nav-item a {
+  color: var(--color-white);
+}
+/* ------------------------------------------------ */
+
+/* HERO SECTION */
+.hero .content {
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+.hero .content .hero-svg {
+  display: flex;
+  height: 400px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero .content .hero-svg img {
+  width: auto;
+  max-height: 100%;
+  margin: 2.6rem auto;
+}
+
+.hero .content h1 {
+  width: 100%;
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2.25px;
+  text-align: center;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .content h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero .content .cable-svg {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: block;
+  background-image: url(../svg/cables.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 0px;
+}
+
+/* .hero .content .cable-svg {
+  background-image: url(./svg/cables.svg);
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+} */
+/* .hero .content .cable-svg > img {
+  width: 100%;
+} */
+
+.hero .content .mouse-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translate(-50%, 0);
+}
+
+@media only screen and (max-width: 991px) {
+  .hero .content .mouse-icon {
+    position: absolute;
+    left: 50%;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+
+/* WHO WE ARE */
+.home .who-we-are {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+  padding: 60px 0;
+  z-index: 0;
+}
+
+.home .who-we-are img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.home .who-we-are h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.home .who-we-are p {
+  width: 171px;
+  height: auto;
+  text-align: center;
+  color: var(--primary-color);
+  margin: auto;
+  font-size: 0.87rem;
+  letter-spacing: 0.5px;
+}
+
+/* Who we are section ELIPS Logo display settings from line 282 to 305 */
+@media only screen and (max-width: 991px) {
+  .content #logo-who-we-are {
+    display: none;
+    display: block;
+  }
+}
+
+.content #logo-who-we-are {
+  display: none;
+}
+
+@media only screen and (min-width: 991px) {
+  .content #logo-who-we-are {
+    display: block;
+  }
+}
+
+/* On mobile screen, who we are section margin is set here */
+@media only screen and (max-width: 991px) {
+  .who-we-are .content .item {
+    margin-bottom: 3.5rem;
+  }
+}
+/* ---------------------------------------------------------------- */
+
+/* WHY ELIPS */
+.home .why-elips {
+  background-color: var(--section-bg);
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+  padding: 60px 0;
+  background-image: url(../img/WhyELIPS/blobs-whyElips.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.home .why-elips .content .text h1 {
+  margin: 0;
+  padding-bottom: 50px;
+  text-align: left;
+  letter-spacing: 0.2rem;
+  line-height: 1.5;
+}
+
+.content .text ul {
+  padding-left: 20px;
+}
+
+#why-elips-header {
+  color: var(--primary-color);
+  font-size: 0.93rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .content #why-elips-image {
+    display: none;
+    display: block;
+  }
+}
+
+.content #why-elips-image {
+  display: none;
+}
+
+@media only screen and (min-width: 991px) {
+  .content #why-elips-image {
+    display: block;
+  }
+}
+
+.home .why-elips .content .text li {
+  padding: 5px 0;
+}
+
+.text ul li {
+  font-size: 0.75rem;
+  list-style-image: url(../img/WhyELIPS/bulletPoint.svg);
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+
+.home .btn-link {
+  background: var(--text-color-secondary);
+  color: var(--color-white);
+  padding: 20px 25px;
+  max-width: 260px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.home .btn-link .in-box {
+  display: contents;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-link .in-box p {
+  font-size: 0.75rem;
+  margin: 0;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn-link .in-box img {
+  margin-right: 0;
+  margin-left: auto;
+}
+/* ---------------------------------------------------------------- */
+
+/* SOLUTIONS&SERVICES */
+.home .solutions-services {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.solutions-services .nav {
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.home .nav .nav-item .solutions-default,
+.home .nav .nav-item .services-default {
+  font-size: 1rem;
+  margin: 20px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  background-color: var(--color-white);
+  border-bottom: solid 6px var(--text-color-secondary);
+}
+
+.home .nav .nav-item .solutions-active,
+.home .nav .nav-item .services-active {
+  font-size: 1rem;
+  margin: 20px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  background-color: var(--color-white);
+  opacity: 0.3;
+  border-bottom: none;
+}
+
+.home .solutions-services .tab-pane {
+  background-image: url(../img/solutions&services/Blue-solutions-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.home .solutions-services .grid {
+  background-color: var(--color-white);
+  padding: 40px;
+}
+
+.home .solutions-services .grid h2 {
+  font-size: 1.5rem;
+  letter-spacing: 2.25px;
+  margin-bottom: 20px;
+}
+
+.grid-solutions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* BEST PRACTICE HERE TO RESIZE SOLUTIONS AND SERVICES DIV */
+.grid-solutions > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.grid-solutions > div > div {
+  display: flex;
+  position: relative;
+}
+
+.grid-solutions > div > div img {
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-solutions > div {
+    width: 33.33%;
+  }
+}
+
+.home
+  .solutions-services
+  .grid
+  .grid-solutions
+  .grid-column
+  .top-solutions
+  img {
+  position: relative;
+}
+
+.home .solutions-services .grid .grid-solutions .grid-column .top-solutions p {
+  font-size: 0.9rem;
+  margin: 0;
+  padding-left: 10px;
+  letter-spacing: 0.5px;
+  align-content: center;
+}
+
+.home .solutions-services .grid .grid-solutions .grid-column .bottom-solutions {
+  padding-top: 1rem;
+}
+
+.home
+  .solutions-services
+  .grid
+  .grid-solutions
+  .grid-column
+  .bottom-solutions
+  a {
+  font-size: 0.8rem;
+  padding-left: 20px;
+}
+
+.home
+  .solutions-services
+  .grid
+  .grid-solutions
+  .grid-column
+  .bottom-solutions
+  img {
+  padding-left: 20px;
+}
+
+.solutions-services .solutions-image {
+  position: absolute;
+  left: 40px;
+  bottom: -10%;
+}
+/* ---------------------------------------------------------------- */
+/* NUMBERS */
+.home .numbers {
+  padding: 60px 0;
+  background-color: var(--section-bg);
+}
+
+/* ---------------------------------------------------------------- */
+/* SECTORS */
+.home .sectors {
+  background-image: url(../img/sectors/blob-sector2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.home .sectors .content {
+  background: none;
+}
+
+/* BURADAKI TREE SISTEMINI COK SPESIFIK OLURSA UZATMALIYIZ */
+.sectors .content .text h1 {
+  font-size: 2.37rem;
+  color: var(--primary-color);
+}
+
+.sectors .content .box {
+  background-color: #ffffff;
+  padding: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  min-height: 160px;
+  border-radius: 0.5rem;
+}
+.sectors .content .box .box-content {
+  text-align: center;
+}
+
+.sectors .content .box .box-content img {
+  margin-top: 15px;
+}
+
+.sectors .content .box .box-content p {
+  font-size: 0.75rem;
+  margin-top: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+  flex-wrap: nowrap;
+}
+
+.sectors .content .box .box-content p:hover {
+  color: #0068fa;
+  transition: 0.5s;
+}
+
+.sectors .content .btn-link {
+  margin: 40px auto;
+}
+
+/* -- Cookie Alert -- */
+
+/* BOTTOM KISMI EN ÜSTE GELMELİ BEST PRACTICE ICIN */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--text-color-secondary),
+    #ff9a41
+  );
+  color: var(--color-white);
+}
+
+.bottom .cookie-button {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--color-white);
+  background-color: var(--text-color-secondary);
+  border: 0;
+  margin: 0.75rem 2.438rem;
+  padding: 0.3rem 2.813rem;
+  width: 100%;
+}
+
+.bottom .cookie-text {
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
+.bottom .cookie-text-box p {
+  margin-bottom: 0;
+}
+
+/* BORDER TRANSPARENT TITREME SORUNUNU ÇÖZECEKTİR */
