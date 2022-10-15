@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Importing Gordita Font family. -->
+  <style>
+    @import url("http://fonts.cdnfonts.com/css/gordita");
+  </style>
+
+  <!-- The following allows us to insert tab Logo to the web page. -->
+  <link rel="icon" href="svg/tabLogo.svg" />
+
+  <title>Elips | Elektronik</title>
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+  <!-- Cookie Alert JS -->
+  <script>
+  function toggleCookie() {
+    var x = document.getElementById("alert");
+    var wrapperClass = document.getElementsByClassName('info-wrapper')[0]
+    if (x.style.visibility !== "none") {
+      wrapperClass.style.display = 'none';
+    } else {
+      wrapperClass.style.display = 'block';
+    }
+  }
+  </script>
+
+<!-- NAVBAR -->
+<body>
+  <!-- FIXED TOPU STICKY TOPA ÇEVİR -->
+  <header id="#top" class="sticky-top nav-wrapper">
+      <div class="upper-header-wrapper">
+        <div class="social-links container d-flex align-items-center d-none d-lg-flex pt-3 pb-3">
+          <div class="phone-mail-wrapper">
+            <div class="d-flex ms-auto">
+              <div class="social-phone">
+                <a class="contact-info-text text-decoration-none" href="tel: +90 (212) 337 02 00"><img
+                    class="img-fluid info-icon" src="./svg/phoneLogo.svg" alt="phone logo" />
+                  +90 (212) 337 02 00
+                </a>
+              </div>
+              <div class="social-mail me-5">
+                <a class="contact-info-text pl-5 text-decoration-none" href="mailto:elips@elips.com"><img
+                    class="img-fluid info-icon" src="./svg/mailLogo.svg" alt="mail logo" />elips@elips.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="whatsapp-linkedin-wrapper">
+            <div class="container d-flex">
+              <div class="social-linkedin">
+                <a href="https://www.linkedin.com/company/elips-elektronik/" class="contact-info-img"><img
+                    class="contact-logo" src="./svg/linkedin.png" alt="linkedin
+                logo" />
+                </a>
+              </div>
+              <div class="social-whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=905322318155" class="contact-info-img"><img
+                    class="contact-logo" src="./svg/whatsapp.png" alt="whatsapp
+                logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg justify-content-between" id="navbar-2nd-row">
+          <a class="navbar-brand" href="#">
+            <img src="./img/elipsLogo.svg" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="all-links collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="navbar-link nav-link active" href="#">HAKKIMIZDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link nav-link active" href="#">HIZMETLER</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link nav-link active" href="#">ÇÖZÜMLER</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link nav-link active" href="#">REFERANSLARIMIZ</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link nav-link active" href="#">İLETİŞİM</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link nav-link active" href="#" id="searchBtn">
+                  <img src="./svg/magnifier.png" alt="search icon" class="search-icon"></img>
+                </a>
+              </li>
+              <!-- NAVBAR ON TOGGLE COLLAPSE -->
+              <div class="nav-toggle-links d-lg-none">
+                <li class="nav-item">
+                  <a class="navbar-link nav-link active" href="#">BAŞARI ÖYKÜLERİMİZ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-link nav-link active" href="#">İŞ ORTAKLARIMIZ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-link nav-link active" href="#">BLOG</a>
+                </li>
+              </div>
+            </ul>
+              <div class="social-all-toggle d-block d-lg-none">
+                <div class="social-phone-toggle">
+                  <a class="contact-info-text text-decoration-none" href="tel: +90 (212) 337 02 00"><img
+                      class="img-fluid info-icon" src="./svg/phoneLogo.svg" alt="phone logo" />+90 (212) 337 02 00
+                  </a>
+                </div>
+                <div class="social-mail-toggle">
+                  <a class="contact-info-text text-decoration-none" href="mailto:elips@elips.com"><img
+                      class="img-fluid info-icon" src="./svg/mailLogo.svg" alt="mail logo" />elips@elips.com
+                  </a>
+                </div>
+                <div class="social-linkedin d-inline">
+                  <a href="https://www.linkedin.com/company/elips-elektronik/" class="contact-info-img"><img
+                      class="contact-logo" src="./svg/linkedin.png" alt="linkedin
+                      logo" />
+                  </a>
+                </div>
+                <div class="social-whatsapp d-inline me-2">
+                  <a href="https://api.whatsapp.com/send?phone=905322318155" class="contact-info-img"><img
+                      class="contact-logo" src="./svg/whatsapp.png" alt="whatsapp
+                      logo" />
+                  </a>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </nav>
+    </div>
+
+    <!-- NavBar 3rd Row Başarı Öykülerimiz -->
+    <div class="navbar-3rd-row py-3 d-none d-lg-block">
+      <div class="container align-items-center justify-content-between d-flex">
+        <p class="text-information">
+          +30 Sene Türk Bilişim Sektörüne Hizmet
+        </p>
+        <div class="navbar-dropdown-link">
+          <ul class="navbar-nav me-auto mb-lg-0 navbar-3rd-row__links">
+            <li class="nav-item">
+              <a class="navbar-link active" style="font-weight: bold;" href="#">BAŞARI ÖYKÜLERİMİZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-link active" style="font-weight: bold;" href="#">İŞ ORTAKLARIMIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-link active" style="font-weight: bold;" href="#">BLOG</a>
+            </li>
+        </div>
+        </ul>
+      </div>
+    </div>
+    </div>
+    </div>
+  </header>
+  
+  <!-- --------------------------------------------------------- -->
+  <div class="home">
+    <!-- HERO SECTION -->
+    <!-- BACKGROUND OLARAK BG KULLANILIRSA POSITION KULLANILMASINA GEREK YOK POSITION, SIZE ATTRIBUTELERINI DE INCELE. -->
+    <section class="hero">
+      <div class="content">
+        <!-- Buna bi class ismi ver flex direction column ve display flex yap -->
+        <!-- HERO SVG CLASSININ ÜSTÜNE ROW CLASSINI VEREREK PADDING LEFT RIGHT 0 DA ÇÖZEBİLİR -->
+        <div class="container-fluid">
+          <div class="hero-svg">
+            <img src="./svg/heroPageSVG.svg" alt="Logo Animation">
+          </div>
+          <!-- <div class="hero-slogan"> -->
+          <H1>Bilişim Teknolojilerinde 
+            <span class="span-text" >Çözüm</span> 
+            Merkeziniz
+          </H1>
+          <!-- </div> -->
+          <div class="cable-svg overflow-visible">
+            <div class="mouse-icon">
+              <a href="#who-we-are" class="">
+                <img src="./svg/mouseIcon.svg" alt="Scrolling mouse icon">
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+    <!-- --------------------------------------------------------- -->
+  
+    <!-- WHO WE ARE -->
+    <section id="who-we-are" class="who-we-are">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <div class="text">
+              <h1>Biz Kimiz?</h1>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-6 col-xs-2">
+            <div class="item">
+              <img class="img-fluid" src="./img/WeAreELIPS/dataCenter.png" alt="Data Center">
+              <h4>Veri Merkezi</h4>
+              <p>Sunucu, Depolama & Yedekleme Üniteleri</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-2">
+            <div class="item">
+              <img class="img-fluid" src="./img/WeAreELIPS/printingView.png" alt="Printing Viewing">
+              <h4>Baskı & Görüntüleme</h4>
+              <p>Yazıcı, Tarayıcı, Çizici </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-2">
+            <div class="item">
+              <img class="img-fluid" src="./img/WeAreELIPS/network&Security.png" alt="Printing Viewing">
+              <h4>Ağ & Güvenlik</h4>
+              <p>Anahtar, Erişim Noktaları, Güvenlik Çözümleri</p>
+            </div>
+          </div>
+          <div id="logo-who-we-are" class="col-lg-12">
+            <img src="./img/WeAreELIPS/whoAreWeELIPS.png" alt="ELIPS LOGO" class="img-fluid">
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-2">
+            <div class="item">
+              <img class="img-fluid" src="./img/WeAreELIPS/mobileUser.png" alt="Mobile End User">
+              <h4>Mobil & Son Kullanıcı</h4>
+              <p>Bilgisayar Sistemleri ve Çevre Bilimleri</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-2">
+            <div class="item">
+              <img class="img-fluid" src="./img/WeAreELIPS/ITservice.png" alt="IT Service">
+              <h4>BT Servis & Hizmetleri</h4>
+              <p>Teknik Servis, Dış Kaynak Kullanımı </p>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-6 col-xs-2">
+            <div class="item">
+              <img class="img-fluid" src="./img/WeAreELIPS/consultancy.png" alt="Consultancy">
+              <h4>Danışmanlık</h4>
+              <p>BT Yönetimi, ISO, Süreç Yönetimi, KVKK-GDPR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <!-- WHY ELIPS -->
+    <section class="why-elips">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="wrapper">
+                <div class="text">
+                  <h1>Neden <span class="span-text">Elips</span>?</h1>
+                  <h4 id="why-elips-header">
+                    Bilişim altyapınızın operasyonel kalitesi tüm diğer süreçlerinizin verimini doğrudan belirler. 30+ yıldır bilgi teknolojileri sektörünün her anında aktif rol alan çözüm merkezi ELİPS size:
+                  </h4>
+                  <ul>
+                    <li>
+                      Kusursuz çalışmayı ilke edinmiş <b>uzman kadrosuyla çözüm odaklı yaklaşım,</b>
+                    </li>
+                    <li>
+                      Araştırma ve geliştirme yetenekleri ile <b>yüksek verimlilik,</b>
+                    </li>
+                    <li>
+                      Üst düzey mühendislik bakışı ile <b>geleceğe yönelik çözümler,</b>
+                    </li>
+                    <li>
+                      Geniş çözüm ve ürün portföyüyle <b>dünya lideri marka deneyimleri,</b>
+                    </li>
+                    <li>
+                      Teknoloji ihtiyaçlarınız için <b>çok yönlü hizmetler,</b>
+                    </li>
+                    <li>
+                      İşinizde <b>esneklik ve süreklilik,</b>
+                    </li>
+                    <li>
+                      Satış sonrası hizmetleriyle <b>kalıcı memnuniyet</b> sunar.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="why-elips-image" class="col-lg-6">
+              <img src="./img/WhyELIPS/overlappingImage.png" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a class="btn-link" href="#">
+                <div class="in-box">
+                  <p>Bize Ulaşın</p>
+                  <img src="./img/WhyELIPS/rightArrow.png">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions&Services -->
+    <section class="solutions-services">
+      <ul class="nav">
+        <li class="nav-item">
+          <span class="tab-nav">
+            <a class="solutions-default" id="solutionsTab" onclick="tabFunction_1()" href="#solutions" data-toggle="tab">Çözümler</a>
+          </span>
+        </li>
+        <li class="nav-item">
+          <span class="tab-nav">
+            <a class="services-default" id="servicesTab" onclick="tabFunction_2()" href="#services" data-toggle="tab">Servisler</a>
+          </span>
+        </li>
+      </ul>
+      <div id="content" class="tab-content">
+        <div id="solutions" class="tab-pane active">
+          <div class="list-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7 col-sm-12 col-12">
+                  <div class="grid">
+                    <h2>Çözümler</h2>
+                    <div class="grid-solutions">
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Veri Merkezi Çözümleri</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Kurumsal Ağ Çözümleri</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>IT Konsolidasyon & Sanallaştırma</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Güvenlik Çözümlerimiz</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Bulut Çözümlerimiz</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Mobil ve Son Kullanıcı</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Çözümlerimiz Baskı</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Merkezi Çözümleri ve Güvenli Doküman Yönetimi</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Dijital İş Çözümleri</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <h2>Hizmetler</h2>
+                    <div class="grid-solutions">
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Veri Merkezi Çözümleri</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Kurumsal Ağ Çözümleri</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>IT Konsolidasyon & Sanallaştırma</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Güvenlik Çözümlerimiz</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Bulut Çözümlerimiz</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Mobil ve Son Kullanıcı</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Çözümlerimiz Baskı</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Merkezi Çözümleri ve Güvenli Doküman Yönetimi</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-column">
+                        <div class="top-solutions">
+                          <img src="./img/solutions&services/bulletPoint.svg" alt="Orange Bullet Circle">
+                          <p>Dijital İş Çözümleri</p>
+                        </div>
+                        <div class="bottom-solutions">
+                          <a href="#Veri-Çözümleri-Merkezi">
+                            İncele
+                            <img src="./img/solutions&services/blue-arrow.svg" alt="Blue Arrow">
+                          </a>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-5 d-md-block d-none position-relative">
+                  <img class="solutions-image" src="./img/solutions&services/Newspaper-img.png" alt="Newspaper Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAKAMLARLA ELIPS -->
+    <section class="numbers">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text">
+                <h1>Rakamlarla Elips</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION FOR SECTORS -->
+    <section class="sectors bg-grey">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text">
+              <h1>Sektörler</h1>
+            </div>
+          </div>
+        </div>
+      <div class="row">
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/turismIcon.png" alt="Turism Icon">
+                  <p>Turizm</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/congreIcon.png" alt="Congre Icon">
+                  <p>Kongre Merkezleri</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/holdingIcon.png" alt="Holding Icon">
+                  <p>Holdingler</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/pharmacyIcon.png" alt="Pharmacy Icon">
+                  <p>İlaç ve Eczacılık</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/mediaIcon.png" alt="Media Icon">
+                  <p>Medya ve Yayıncılık</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/financeIcon.png" alt="Finance Icon">
+                  <p>Finans</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/industryIcon.png" alt="Industry Icon">
+                  <p>Sanayi ve Üretim</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/serviceIcon.png" alt="Service Icon">
+                  <p>Hizmet</p> 
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/energyIcon.png" alt="Energy Icon">
+                  <p>Enerji</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/constructionIcon.png" alt="Construction Icon">
+                  <p>İnşaat</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/distributionIcon.png" alt="Distribution Icon">
+                  <p>Dağıtım</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/merchendiseIcon.png" alt="Merchendise Icon">
+                  <p>Mağazacılık Perakende</p>
+                </a>
+              </div>
+            </div>
+            </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/plazaIcon.png" alt="Plaza Icon">
+                  <p>Plaza ve AVM</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/educationIcon.png" alt="Education Icon">
+                  <p>Eğitim</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/lawIcon.png" alt="Law Icon">
+                  <p>Hukuk</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/healthIcon.png" alt="Health Icon">
+                  <p>Sağlık</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/automativeIcon.png" alt="Automative Icon">
+                  <p>Otomativ</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/logisticsIcon.png" alt="Logistics Icon">
+                  <p>Lojistik</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/limanIcon.png" alt="Docking Icon">
+                  <p>Liman İşletmeciliği</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/cosmeticsIcon.png" alt="Cosmetics Icon">
+                  <p>Kozmetik</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/agricultureIcon.png" alt="Agriculture Icon">
+                  <p>Tarım ve Gıda</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/pharmacyIcon.png" alt="Pharmacy Icon">
+                  <p>İlaç ve Eczacılık</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/mediaIcon.png" alt="Media Icon">
+                  <p>Medya ve Yayıncılık</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="box">
+              <div class="box-content">
+                <a href="#">
+                  <img src="./img/sectors/icon/financeIcon.png" alt="Finance Icon">
+                  <p>Finans</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col justify-content-center">
+            <a class="btn-link" href="#">
+              <div class="in-box">
+                <p>Tüm Sektörler</p>
+                <img src="./img/WhyELIPS/rightArrow.png">
+              </div>
+            </a>
+          </div>
+      </div>
+      </div>
+    </div>
+    </section>
+  </div>
+
+  <!-- Sticky Cookie Alert Bar -->
+  <div class="info-wrapper"> 
+    <div class="bottom sticky-bottom d-flex d-none d-xl-flex" id="alert">
+      <div class="cookie-text-box container-fluid justify-content-start align-items-center m-4">
+        <p class="cookie-text" id="id-cookie-text">
+          Elips Elektronik San. ve Tic. Ltd. Şti. (“Elips Elektronik”) olarak, internet sitemizi ziyaretleriniz
+          sıranızda internet sitemizin işlevselliğini ve performansını arttırarak size sunulan hizmetleri geliştirmek
+          için çerezlerden faydalanmaktayız. Bu çerezlerin kullanımı başta 6698 sayılı Kişisel Verilerin Korunması
+          Kanunu (“Kanun”) olmak üzere tabi olduğumuz mevzuata uygun şekilde gerçekleştirilmektedir.’
+        </p>
+      </div>
+      <div class="accept-button d-flex justify-content-end text-nowrap p-2">
+        <button class="cookie-button" onclick="toggleCookie()">Kabul Et</button>
+      </div>
+    </div>
+  </div> 
+
+  <!-- Cookie Allert Display None Button -->
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/switchTab.js"></script>
+</body>
+</html>
